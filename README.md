@@ -39,11 +39,10 @@ npm start
 ```
 
 ## Usage
-Details on how to use the app.
+Details will be provided soon.
 
 ## Contributing
-Guidelines for contributing to the project.
 
 ## License
-Specify the license under which the project is released.
+
 #
