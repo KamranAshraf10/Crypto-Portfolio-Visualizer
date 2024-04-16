@@ -61,6 +61,7 @@ def new_transaction():
             time_created,
             price_purchased_at,
             no_of_coins,
+            coins,
         ),
     )
     conn.commit()
