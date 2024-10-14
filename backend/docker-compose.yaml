@@ -1,13 +1,13 @@
 services:
   database:
-    image: postgres
+    image: postgres:latest
     ports:
-      - 5432:5432
+      - "5432:5432"
     restart: always
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=exampledb
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: exampledb
     volumes:
       - db-crypto-portfolio-visualization-app:/var/lib/postgresql/data
 
@@ -20,4 +20,4 @@ services:
       - "8080:8080"
 
 volumes:
-  db-crypto-portfolio-visualization-app: {}
+  db-crypto-portfolio-visualization-app:
